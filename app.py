@@ -37,6 +37,81 @@ def login():
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>登入</title>
+                        <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f7fc;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                }
+                h1, h2 {
+                    color: #333;
+                }
+                .container {
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+                    width: 80%;
+                    max-width: 600px;
+                    margin: 20px;
+                }
+                .file-upload-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .file-upload-form input[type="file"] {
+                    padding: 10px;
+                    margin-bottom: 20px;
+                }
+                .file-upload-form input[type="submit"] {
+                    background-color: #4CAF50;
+                    color: white;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                .file-upload-form input[type="submit"]:hover {
+                    background-color: #45a049;
+                }
+                .file-list {
+                    list-style-type: none;
+                    padding: 0;
+                }
+                .file-list li {
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+                }
+                .file-list a {
+                    text-decoration: none;
+                    color: #3498db;
+                    margin-right: 10px;
+                }
+                .file-list a:hover {
+                    text-decoration: underline;
+                }
+                .delete-link {
+                    color: #e74c3c;
+                    cursor: pointer;
+                }
+                .delete-link:hover {
+                    text-decoration: underline;
+                }
+            </style>
         </head>
         <body>
             <h1>登入頁面</h1>
